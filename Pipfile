@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+itsdangerous = "==0.24"
+pyserial = "==2.7"
+Flask = "==0.10.1"
+Jinja2 = "==2.8"
+MarkupSafe = "==0.23"
+Werkzeug = "==0.10.4"
+serial = "*"
+
+[requires]
+python_version = "2.7"

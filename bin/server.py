@@ -3,6 +3,7 @@
 import serial
 import logging
 import json
+import glob
 from time import sleep
 from flask import Flask
 
@@ -11,7 +12,8 @@ from logging.handlers import RotatingFileHandler
 app = Flask(__name__)
 currcolor = None
 
-ser = serial.Serial('/dev/cu.Repleo-CH341-00001114', timeout=5)
+serials = glob.glob('/dev/cu.usbserial*')
+ser = serial.Serial(serials[0], timeout=5)
 connected = False
 currentcolor = None
 
