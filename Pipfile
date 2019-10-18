@@ -8,8 +8,8 @@ verify_ssl = true
 [packages]
 itsdangerous = "==0.24"
 pyserial = "==2.7"
-Flask = "==0.10.1"
-Jinja2 = "==2.8"
+Flask = ">1.1"
+Jinja2 = ">2.8"
 MarkupSafe = "==0.23"
 Werkzeug = "==0.15.3"
 serial = "*"
