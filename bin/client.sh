@@ -9,6 +9,7 @@ while true; do
   ((RUNS=RUNS+1))
   if [ $RUNS -ge 3 ]; then
      RUNS=0
+     echo ""
      sleep 3;
   fi
 done
